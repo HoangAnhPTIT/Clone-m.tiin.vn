@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Tiin</title>
+</head>
+
+<body>
+    <div class="header">
+        <div onclick="btnMenuClick()" class="btnMenu" id="btnMenu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="logoHeader" id="logoHeader">
+            <img class="logoImg" src="./asset/logo_header.png" alt="Logo">
+        </div>
+
+        <div class="inputSearchBar" id="inputSearchBar">
+            <input class="inputSearch" type="text" placeholder="Nhap tu khoa tim kiem..." />
+        </div>
+
+        <div onclick="btnSearchClick()" class="btnSearch">
+            <img class="imgSearch" src="./asset/icons8-search.svg" alt="Button Search">
+        </div>
+    </div>
+    <div class="main">
+        <div class="swiper-title-bar">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Sao Viet vuong lum xum tu thien</div>
+                    <div class="swiper-slide">Giai dau XGaming lien minh thach dau</div>
+                    <div class="swiper-slide">Covid-19 o Viet Nam</div>
+                    <div class="swiper-slide">Viettel ra mat phim dien anh DIEN TOI online</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
